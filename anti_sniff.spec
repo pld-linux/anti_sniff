@@ -2,11 +2,11 @@ Summary:	AntiSniff is a new class of proactive security monitoring tool
 Summary(pl):	AntiSniff jest narzêdziem do szukania pods³uchuj±cych komputerów
 Name:		anti_sniff
 Version:	1.1.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.securitysoftwaretech.com/antisniff/dist/%{name}_researchv1-1-2.tar.gz
-URL:		http://www.securitysoftwaretech.com/antisniff/
+URL:		http://www.securitysoftwaretech.com/antisniff
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
