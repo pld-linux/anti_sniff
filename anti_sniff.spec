@@ -11,16 +11,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Anti-Sniffer runs on a local ethernet segment and reports whether
-machines are in promiscuous mode or not. It does this through a variety
-of tests designed to tickle certain drivers, operating systems, and
-hardware filtering.
+machines are in promiscuous mode or not. It does this through a
+variety of tests designed to tickle certain drivers, operating
+systems, and hardware filtering.
 
 
 %description -l pl
-Antysniffer dzia³a na lokalnym segmencie ethernetowym i sprawdza, 
-czy jaka¶ maszyna przechodzi w tryb promiscuous. 
-Sprawdzanie polega na przeprowadzeniu ró¿norodnych testów 
-napisanych dla ró¿nych driverów, systemów operacyjnych i filtrów sprzêtowych.
+Antysniffer dzia³a na lokalnym segmencie ethernetowym i sprawdza, czy
+jaka¶ maszyna przechodzi w tryb promiscuous. Sprawdzanie polega na
+przeprowadzeniu ró¿norodnych testów napisanych dla ró¿nych driverów,
+systemów operacyjnych i filtrów sprzêtowych.
 
 
 %prep
