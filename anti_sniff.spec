@@ -34,12 +34,10 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 install anti_sniffer arptest echotest etherpingtest icmptimetest \
 	watchdnstest $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf ANTI_SNIFFER_DOCS CREDITS DSL_NOTES LINUX_NOTES NOTES README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ANTI_SNIFFER_DOCS CREDITS DSL_NOTES LINUX_NOTES NOTES README TODO
 %attr(755,root,root) %{_bindir}/*
