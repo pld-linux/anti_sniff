@@ -1,5 +1,5 @@
 Summary:	AntiSniff is a new class of proactive security monitoring tool
-Summary(pl):	AntiSniff jest narzêdziem do szukania komputerów z promiscuous mode na sieciówce
+Summary(pl):	AntiSniff jest narzêdziem do szukania pods³uchuj±cych komputerów
 Name:		anti_sniff
 Version:	1.1.2
 Release:	1
@@ -15,13 +15,11 @@ machines are in promiscuous mode or not. It does this through a
 variety of tests designed to tickle certain drivers, operating
 systems, and hardware filtering.
 
-
 %description -l pl
-Antysniffer dzia³a na lokalnym segmencie ethernetowym i sprawdza, czy
-jaka¶ maszyna przechodzi w tryb promiscuous. Sprawdzanie polega na
-przeprowadzeniu ró¿norodnych testów napisanych dla ró¿nych driverów,
-systemów operacyjnych i filtrów sprzêtowych.
-
+Antysniffer dzia³a w lokalnym segmencie ethernetowym i sprawdza, czy
+jaka¶ maszyna ma kartê sieciow± w trybie promiscuous. Sprawdzanie
+polega na przeprowadzeniu ró¿norodnych testów napisanych dla ró¿nych
+driverów, systemów operacyjnych i filtrów sprzêtowych.
 
 %prep
 %setup -q -n %{name}
@@ -42,7 +40,6 @@ install  icmptimetest $RPM_BUILD_ROOT%{_bindir}
 install  watchdnstest $RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf ANTI_SNIFFER_DOCS CREDITS DSL_NOTES LICENSE LINUX_NOTES  NOTES README  TODO
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
