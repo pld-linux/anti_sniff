@@ -3,7 +3,7 @@ Summary(pl):	AntiSniff jest narzêdziem do szukania pods³uchuj±cych komputerów
 Name:		anti_sniff
 Version:	1.1.2
 Release:	2
-License:	GPL
+License:	Very Restrictive
 Group:		Applications/Networking
 Source0:	http://www.securitysoftwaretech.com/antisniff/dist/%{name}_researchv1-1-2.tar.gz
 URL:		http://www.securitysoftwaretech.com/antisniff/
