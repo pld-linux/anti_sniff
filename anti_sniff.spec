@@ -6,7 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.securitysoftwaretech.com/antisniff/dist/%{name}_researchv1-1-2.tar.gz
-URL:		http://www.securitysoftwaretech.com/antisniff
+URL:		http://www.securitysoftwaretech.com/antisniff/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,31 +25,21 @@ driverów, systemów operacyjnych i filtrów sprzêtowych.
 %setup -q -n %{name}
 
 %build
-
 %{__make} linux-all CFLAGS="%{rpmcflags} " CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install  anti_sniffer $RPM_BUILD_ROOT%{_bindir}
-install  arptest $RPM_BUILD_ROOT%{_bindir}
-install  echotest $RPM_BUILD_ROOT%{_bindir}
-install  etherpingtest $RPM_BUILD_ROOT%{_bindir}
-install  icmptimetest $RPM_BUILD_ROOT%{_bindir}
-install  watchdnstest $RPM_BUILD_ROOT%{_bindir}
+install anti_sniffer arptest echotest etherpingtest icmptimetest \
+	watchdnstest $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf ANTI_SNIFFER_DOCS CREDITS DSL_NOTES LICENSE LINUX_NOTES  NOTES README  TODO
+gzip -9nf ANTI_SNIFFER_DOCS CREDITS DSL_NOTES LINUX_NOTES NOTES README TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/anti_sniffer
-%attr(755,root,root) %{_bindir}/arptest
-%attr(755,root,root) %{_bindir}/echotest
-%attr(755,root,root) %{_bindir}/etherpingtest
-%attr(755,root,root) %{_bindir}/icmptimetest
-%attr(755,root,root) %{_bindir}/watchdnstest
 %doc *.gz
+%attr(755,root,root) %{_bindir}/*
