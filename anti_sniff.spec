@@ -6,6 +6,7 @@ Release:	2
 License:	Very Restrictive
 Group:		Applications/Networking
 Source0:	http://www.securitysoftwaretech.com/antisniff/dist/%{name}_researchv1-1-2.tar.gz
+# Source0-md5:	0f6d71b4515eefde182516a1c5e1bf66
 URL:		http://www.securitysoftwaretech.com/antisniff/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
