@@ -1,5 +1,5 @@
 Summary:	AntiSniff is a new class of proactive security monitoring tool
-Summary(pl.UTF-8):   AntiSniff jest narzędziem do szukania podsłuchujących komputerów
+Summary(pl.UTF-8):	AntiSniff jest narzędziem do szukania podsłuchujących komputerów
 Name:		anti_sniff
 Version:	1.1.2
 Release:	3
