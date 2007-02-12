@@ -1,5 +1,5 @@
 Summary:	AntiSniff is a new class of proactive security monitoring tool
-Summary(pl):	AntiSniff jest narzêdziem do szukania pods³uchuj±cych komputerów
+Summary(pl.UTF-8):   AntiSniff jest narzÄ™dziem do szukania podsÅ‚uchujÄ…cych komputerÃ³w
 Name:		anti_sniff
 Version:	1.1.2
 Release:	3
@@ -16,11 +16,11 @@ machines are in promiscuous mode or not. It does this through a
 variety of tests designed to tickle certain drivers, operating
 systems, and hardware filtering.
 
-%description -l pl
-Antysniffer dzia³a w lokalnym segmencie ethernetowym i sprawdza, czy
-jaka¶ maszyna ma kartê sieciow± w trybie promiscuous. Sprawdzanie
-polega na przeprowadzeniu ró¿norodnych testów napisanych dla ró¿nych
-driverów, systemów operacyjnych i filtrów sprzêtowych.
+%description -l pl.UTF-8
+Antysniffer dziaÅ‚a w lokalnym segmencie ethernetowym i sprawdza, czy
+jakaÅ› maszyna ma kartÄ™ sieciowÄ… w trybie promiscuous. Sprawdzanie
+polega na przeprowadzeniu rÃ³Å¼norodnych testÃ³w napisanych dla rÃ³Å¼nych
+driverÃ³w, systemÃ³w operacyjnych i filtrÃ³w sprzÄ™towych.
 
 %prep
 %setup -q -n %{name}
